@@ -5,6 +5,18 @@
 
 }
 
-.ba {
-    background: linear-gradient(#00000065)
+.head {
+    color: #fff;
+}
+
+.dis {
+    color: #fff;
+}
+
+.btn {
+    color: #fff;
+    background: var(--btnBackground);
+    border: none;
+    padding: 10px 10px;
+    margin-top: 20px;
 }
