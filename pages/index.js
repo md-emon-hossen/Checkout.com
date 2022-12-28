@@ -28,11 +28,21 @@ export default function Home() {
           <Explore />
           <Explore />
           <Explore />
+          <Explore />
+          <Explore />
+          <Explore />
+          <Explore />
+          <Explore />
+          <Explore />
+          <Explore />
+          <Explore />
+          <Explore />
+          <Explore />
+          <Explore />
+          <Explore />
         </div>
       </div>
       <Arrow />
-
-
 
     </Container>
   )

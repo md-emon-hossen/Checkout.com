@@ -13,13 +13,18 @@
 
 .ExloreItemWrp {
     height: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
 }
+
+
+
+
 
 @media (max-width:768px) {
     .ExloreItemWrp {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
     }
 }

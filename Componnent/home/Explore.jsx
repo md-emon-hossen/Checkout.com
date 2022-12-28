@@ -11,6 +11,8 @@ export default function Explore() {
         backgroundSize: "Cover",
         height: "100%",
         padding: "10px 15px",
+        width: "50%",
+        marginRight: "20px",
     }
 
     return (

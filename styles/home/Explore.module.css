@@ -1,6 +1,7 @@
 .titleWRp {
     transform: translateY(90px);
     color: #fff;
+    width: 200px;
 }
 
 .titleWRp>h4 {
