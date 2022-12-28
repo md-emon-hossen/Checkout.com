@@ -1,0 +1,19 @@
+.ArrowWrp {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-115px);
+}
+
+.arrowBtn {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: var(--btnBackground);
+    color: #fff;
+    border: none;
+}

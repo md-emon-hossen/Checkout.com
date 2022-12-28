@@ -79,6 +79,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    background: #fff;
 }
 
 .optionModule>div {
@@ -139,7 +140,6 @@
     }
 
     .optionModule {
-        background: #fff;
         margin: auto;
         width: fit-content;
         padding: 10px;

@@ -1,0 +1,10 @@
+.offerWrp {
+    margin-top: 65px;
+}
+
+.OfferItemWrp {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
