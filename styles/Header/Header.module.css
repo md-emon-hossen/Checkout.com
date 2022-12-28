@@ -1,0 +1,10 @@
+.HeaderWrper {
+    width: 100vw;
+    height: fit-content;
+    background: var(--parimaryBackground);
+}
+
+.HeaderContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+}

@@ -1,0 +1,23 @@
+.containerWrp {
+    width: 80%;
+    margin: auto;
+}
+
+
+@media (max-width:1024px) {
+    .containerWrp {
+        width: 85%;
+    }
+}
+
+@media (max-width:768px) {
+    .containerWrp {
+        width: 90%;
+    }
+}
+
+@media (max-width:425px) {
+    .containerWrp {
+        width: 95%;
+    }
+}

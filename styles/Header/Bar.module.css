@@ -1,0 +1,151 @@
+.BarWrper {
+    height: 55px;
+    width: 100%;
+    border: 4px solid var(--yellowBorder);
+    border-radius: 5px;
+    transform: translateY(50%);
+    align-items: center;
+    display: flex;
+    padding: 0px 20px;
+    background: #fff;
+    justify-content: space-between;
+}
+
+
+.input {
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+
+.input::placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 8px 10px;
+    background: var(--btnBackground);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.BarWrper>div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icons {
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(168, 168, 168);
+}
+
+.distinations {
+    display: flex;
+    align-items: center;
+}
+
+.CkeckInOut {
+
+    width: 100%;
+    position: relative;
+}
+
+.bokkingInfo>span {
+    text-align: center;
+    position: relative;
+}
+
+.dateRange {
+    position: absolute;
+    transform: translateX(-70%);
+    margin-top: 35px;
+    border: 2px solid var(--yellowBorder);
+    background: #fff;
+}
+
+.optionModule {
+    position: absolute;
+    width: 250px;
+    height: fit-content;
+    border: 2px solid var(--yellowBorder);
+    margin-top: 15px;
+    transform: translateX(-10%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.optionModule>div {
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: .5fr .1fr .1fr .1fr;
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+
+
+
+
+
+@media (max-width:1024px) {
+    .BarWrper {
+        height: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+
+    .BarWrper>div {
+        text-align: left;
+    }
+
+    .btn {
+        width: 70%;
+        min-width: fit-content;
+
+    }
+}
+
+@media (max-width:425px) {
+    .BarWrper {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        padding: 10px 10px;
+    }
+
+    .BarWrper>div {
+        text-align: left;
+    }
+
+    .btn {
+        width: 100%;
+        margin: auto;
+        margin: 5px 0px;
+    }
+
+    .dateRange {
+        margin-left: 20px;
+    }
+
+    .optionModule {
+        background: #fff;
+        margin: auto;
+        width: fit-content;
+        padding: 10px;
+    }
+
+    .optionModule>div>div {
+        margin: 0px 5px;
+    }
+}
