@@ -10,14 +10,14 @@ export default function Explore() {
         backgroundPosition: "center",
         backgroundSize: "Cover",
         height: "100%",
-        padding: "10px 15px"
+        padding: "10px 15px",
     }
 
     return (
-        <div style={style}>
+        <div className={style.exploreWrp} style={style}>
             <div className={styles.titleWRp}>
-                <h4>Dhaka</h4>
-                <p>255 Propertise</p>
+                {/* <h4>Dhaka</h4>
+                <p>255 Propertise</p> */}
             </div>
         </div>
     )
