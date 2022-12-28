@@ -1,0 +1,9 @@
+.titleWRp {
+    transform: translateY(90px);
+    color: #fff;
+}
+
+.titleWRp>h4 {
+    font-size: 20px;
+    margin-bottom: -5px;
+}
