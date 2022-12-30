@@ -1,0 +1,6 @@
+.headerDesign {
+    background: var(--parimaryBackground);
+    position: sticky;
+    top: 0px;
+    position: -webkit-sticky;
+}

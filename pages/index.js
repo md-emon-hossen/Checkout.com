@@ -15,6 +15,8 @@ export default function Home() {
         <div className={styles.OfferItemWrp}>
           <Offer />
           <Offer />
+          <Offer />
+          <Offer />
         </div>
       </div>
       <Arrow />
@@ -45,5 +47,6 @@ export default function Home() {
       <Arrow />
 
     </Container>
+
   )
 }

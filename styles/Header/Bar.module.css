@@ -91,9 +91,9 @@
 }
 
 
-
-
-
+.optionModule>div>div>button {
+    outline: 1px solid var(--btnBackground);
+}
 
 @media (max-width:1024px) {
     .BarWrper {

@@ -1,0 +1,105 @@
+.serchWrp {
+    display: grid;
+    grid-template-areas: "aside body body body";
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.body {
+    grid-area: body;
+    display: flex;
+    flex-direction: column;
+}
+
+.searcherWrp {
+    margin: auto;
+    background: var(--yellowBorder);
+    color: black;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 7px;
+}
+
+.searcherWrp>h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.inputWrper {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputWrper>div>p {
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+.destinationInput {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 9px;
+}
+
+.CheckingInput {
+    background: #fff;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 17px;
+}
+
+.optionsWrp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.optionsWrp>div {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0px;
+    padding-left: 15px;
+}
+
+.optionsWrp>div>span {
+    color: rgb(47, 47, 47);
+}
+
+.optionsWrp>div>input {
+    width: 50px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.btn {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+    background: var(--btnBackground);
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:768px) {
+    .serchWrp {
+
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "aside aside aside aside",
+            "body body body body"
+
+    }
+}
