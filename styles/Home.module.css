@@ -5,8 +5,10 @@
 .OfferItemWrp {
     height: 200px;
     width: 100%;
-    display: flex;
-    overflow-x: scroll
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+
 }
 
 .OfferItemWrp::-webkit-scrollbar {
@@ -28,6 +30,13 @@
 
 
 @media (max-width:768px) {
+
+    .OfferItemWrp {
+        grid-template-columns: 1fr !important;
+
+    }
+
+
     .ExloreItemWrp {
         grid-template-columns: 1fr 1fr;
 

@@ -1,4 +1,5 @@
 import { format } from "date-fns";
+import { useRef } from "react";
 import { DateRange } from "react-date-range";
 import Container from "../../Componnent/Container";
 import Footer from "../../Componnent/Footer";
@@ -10,12 +11,13 @@ import styles from "../../styles/search/searchResult.module.css";
 
 export default function Index() {
 
-    const { state, setState, room, child, adult, setroom, setchild, setadult, destination, setdestination, openDate, setopenDate } = UseAllContext();
+    const { state, setState, room, child, adult, setroom, setchild, setadult, destination, setdestination, openDate, setopenDate, setloading } = UseAllContext();
+    const ref = useRef();
+    const reftwo = useRef();
 
 
     const handleClick = async (e) => {
         e.preventDefault();
-
         const object = {
             adult,
             child,
@@ -24,7 +26,13 @@ export default function Index() {
             state
 
         }
+
         console.log(object);
+
+
+
+
+
     }
 
 
@@ -34,7 +42,7 @@ export default function Index() {
     return (
         <Container>
             <div className={styles.serchWrp}>
-                <div className={styles.aside}>
+                <div ref={reftwo} className={styles.aside}>
                     <div className={styles.searcherWrp}>
                         <h3>Search</h3>
                         <div className={styles.inputWrper}>
@@ -88,7 +96,7 @@ export default function Index() {
                     </div>
 
                 </div>
-                <div className={styles.body}>
+                <div ref={ref} className={styles.body}>
                     <HotelItem />
                     <HotelItem />
                     <HotelItem />

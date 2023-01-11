@@ -4,6 +4,8 @@
 }
 
 
+
+
 @media (max-width:1024px) {
     .containerWrp {
         width: 85%;
@@ -18,6 +20,14 @@
 
 @media (max-width:425px) {
     .containerWrp {
-        width: 95%;
+        width: 92%;
+    }
+}
+
+
+/* extra large display */
+@media (min-width:1500px) {
+    .containerWrp {
+        width: 1400px;
     }
 }

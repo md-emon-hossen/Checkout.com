@@ -5,15 +5,14 @@ import Offer from "../Componnent/home/Offer";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+
+
   return (
     <Container>
-      {/* offers */}
       <div className={styles.offerWrp}>
         <h3>Offers</h3>
         <p>Promotions, deals, and special offers for you</p>
         <div className={styles.OfferItemWrp}>
-          <Offer />
-          <Offer />
           <Offer />
           <Offer />
         </div>
@@ -27,20 +26,7 @@ export default function Home() {
         <div className={styles.ExloreItemWrp}>
           <Explore />
           <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
-          <Explore />
+
         </div>
       </div>
       <Arrow />

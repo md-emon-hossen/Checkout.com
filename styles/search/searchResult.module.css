@@ -104,6 +104,18 @@
     margin-bottom: 10px;
 }
 
+
+
+@media (max-width:1024px) {
+
+    .serchWrp {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        margin-top: 20px;
+        grid-gap: 20px;
+    }
+}
+
 @media (max-width:768px) {
     .serchWrp {
         display: grid;
@@ -117,7 +129,7 @@
     }
 
     .body {
-        margin-top: -115px;
+        margin-top: -60px;
     }
 
 }

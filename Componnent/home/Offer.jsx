@@ -11,7 +11,7 @@ export default function Offer() {
         backgroundSize: "Cover",
         height: "100%",
         padding: "10px 15px",
-        width: "50%",
+        width: "100%",
         marginRight: "20px",
     }
 

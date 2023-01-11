@@ -1,4 +1,3 @@
-import { CiLocationOn } from "react-icons/ci";
 import Container from "../../Componnent/Container";
 import Footer from "../../Componnent/Footer";
 import OtherPageHeader from "../../Componnent/header/OtherPageHeader";
@@ -22,7 +21,7 @@ export default function SingleHotel() {
                 <div className={styles.singleHeaderWrp}>
                     <div className={styles.header}>
                         <h2>Grand Plance Hotel</h2>
-                        <p><CiLocationOn className={styles.icons} /> Rongpur central city</p>
+                        <p> Rongpur central city</p>
                         <p className={styles.spanone}>Excellent Location 500m from center</p>
                         <p className={styles.spanTwo}>Book and Stay over $140 at this property and get a free airport taxi</p>
                     </div>

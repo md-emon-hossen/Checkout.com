@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/Header/HeaderBottom.module.css";
 import Container from "../Container";
 
@@ -9,7 +10,7 @@ export default function HeaderBottom() {
                 <p>
                     Search deals on hotels, homes, and much more...<br />
                     Get Rewarded for your travels- Unlock  instance saving 10% or more with a free HotelBooking account.</p>
-                <button>Sign in / Register</button>
+                <Link href={"/signup"}><button className={styles.btn}>Sign in / Register</button></Link>
             </div>
         </Container>
     )
