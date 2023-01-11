@@ -41,12 +41,12 @@ export default function SingleHotel() {
                 <div className={styles.discriptions}>
                     <div className={styles.header}>
                         <h2>Stay in the heart of city</h2>
-                        <p>Reshma is a garment worker in Dhaka. She's 18 years old. Her family came to Dhaka from a village eight years ago. There was river erosion in her village. They last their home. So the family came to Dhaka. Reshma's father worked as a rickshaw driver, but he died in an accident. Reshma's uncle Ratan helped the family. He found a small house for them at Kalyanpur. He took Reshma to a garment factory in Mirpur. She works there now. He younger brother Babul goes to school. He's in class 5. Her mother stiches 'nakshi kathas</p>
+                        <p>Reshma is a garment worker in Dhaka. She&apos;s 18 years old. Her family came to Dhaka from a village eight years ago. There was river erosion in her village. They last their home. So the family came to Dhaka. Reshma&apos;s father worked as a rickshaw driver, but he died in an accident. Reshma&apos;s uncle Ratan helped the family. He found a small house for them at Kalyanpur. He took Reshma to a garment factory in Mirpur. She works there now. He younger brother Babul goes to school. He&apos;s in class 5. Her mother stiches nakshi kathas</p>
                     </div>
                     <div className={styles.price}>
                         <div>
                             <h3>Perfect for a 9-Night Stay!</h3>
-                            <p>Reshma is a garment worker in Dhaka. She's 18 years old. Her family came to Dhaka from a village eight years ago.</p>
+                            <p>Reshma is a garment worker in Dhaka. She&apos;s 18 years old. Her family came to Dhaka from a village eight years ago.</p>
                             <h2>$940 (9 night)</h2>
                             <button>Reserve or Book Now</button>
                         </div>
