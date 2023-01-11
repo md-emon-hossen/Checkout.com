@@ -68,4 +68,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.rattingWrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rattingWrp>div {
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+
+}
+
+.rating {
+    width: fit-content;
+    padding: 7px;
+    color: #fff;
+    background: var(--parimaryBackground);
+}
+
+.prigingWrp {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: end;
+}
+
+.prigingWrp>h2 {
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.prigingWrp>p {
+    padding-bottom: 3px;
+    margin: 0px;
+    color: rgb(110, 110, 110);
 }

@@ -1,16 +1,18 @@
 .serchWrp {
     display: grid;
-    grid-template-areas: "aside body body body";
-    grid-gap: 10px;
+    grid-template-columns: 270px 1fr;
     margin-top: 20px;
+    grid-gap: 20px;
 }
 
 .aside {
-    grid-area: aside;
+    height: 75vh;
+    position: sticky;
+    top: 150px;
+    z-index: 0;
 }
 
 .body {
-    grid-area: body;
     display: flex;
     flex-direction: column;
 }
@@ -20,7 +22,7 @@
     background: var(--yellowBorder);
     color: black;
     padding: 10px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     border-radius: 7px;
 }
@@ -42,19 +44,19 @@
 
 .destinationInput {
     width: 100%;
-    outline: none;
     border: none;
     border-radius: 3px;
     padding: 9px;
+    border: 2px solid var(--parimaryBackground);
 }
 
 .CheckingInput {
     background: #fff;
     width: 100%;
-    outline: none;
-    border: none;
+    border: 2px solid var(--parimaryBackground);
     border-radius: 3px;
-    padding: 17px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .optionsWrp {
@@ -78,6 +80,15 @@
     width: 50px;
     outline: none;
     border: 1px solid black;
+    text-align: center;
+}
+
+
+.dateRange {
+    position: absolute;
+    margin-top: 5px;
+    border: 2px solid var(--yellowBorder);
+    background: #fff;
 }
 
 .btn {
@@ -95,11 +106,18 @@
 
 @media (max-width:768px) {
     .serchWrp {
-
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "aside aside aside aside",
-            "body body body body"
-
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin-top: 20px;
     }
+
+    .aside {
+        position: static;
+    }
+
+    .body {
+        margin-top: -115px;
+    }
+
 }

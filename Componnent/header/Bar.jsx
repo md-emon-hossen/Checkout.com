@@ -1,46 +1,43 @@
 import { format } from "date-fns";
 import { useRouter } from "next/router";
-import { useState } from "react";
 import { DateRange } from "react-date-range";
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { BsPeopleFill } from "react-icons/bs";
 import { FaBed, FaCalendarAlt } from "react-icons/fa";
+import { UseAllContext } from "../../context/AllContext";
 import styles from "../../styles/Header/Bar.module.css";
 import Container from "../Container";
 import OptionItem from "../OptionItem";
 
 export default function Bar() {
-    const router = useRouter();
-    const [openDate, setopenDate] = useState(false);
-    const [openOption, setopenOption] = useState(false);
-    const [state, setState] = useState([
-        {
-            startDate: new Date(),
-            endDate: new Date(),
-            key: 'selection'
-        }
-    ]);
-    const [adult, setadult] = useState(1);
-    const [child, setchild] = useState(0);
-    const [room, setroom] = useState(1);
 
-    //object
-    const valueObject = {
-        adult,
-        child,
-        room
-    }
+    const router = useRouter();
+
+    const { openDate, setopenDate, openOption, setopenOption, state, setState, adult, setadult, child, setchild, room, setroom, destination, setdestination, setloading } = UseAllContext();
 
 
 
     function handleClick(e) {
         e.preventDefault();
 
-        router.push("/searchresult");
+        const object = {
+            adult,
+            child,
+            room,
+            destination,
+            state
+
+        }
+
+
+        if (destination === '') {
+            alert("where are you going?");
+        } else {
+            setloading(false);
+            router.push("/searchresult");
+        }
     }
-
-
 
 
     return (
@@ -48,12 +45,12 @@ export default function Bar() {
             <div className={styles.BarWrper}>
                 <div className={styles.distinations}>
                     <FaBed className={styles.icons} />
-                    <input className={styles.input} type="text" placeholder="Where are you going?" />
+                    <input className={styles.input} onChange={(e) => setdestination(e.target.value)} type="text" value={destination} placeholder="Where are you going?" />
                 </div>
                 <div>
                     <FaCalendarAlt className={styles.icons} />
                     <div className={styles.CkeckInOut} onClick={() => setopenDate(!openDate)}>
-                        <span>{`${format(state[0].startDate, 'mm/dd/yyyy')} to ${format(state[0].endDate, 'mm/dd/yyyy')}`}</span>
+                        <span>{`${format(state[0].startDate, 'mm/dd/yyyy')} To ${format(state[0].endDate, 'mm/dd/yyyy')}`}</span>
                         {openDate && <DateRange
                             editableDateInputs={true}
                             onChange={item => setState([item.selection])}

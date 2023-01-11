@@ -7,7 +7,6 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <Container>
-
       {/* offers */}
       <div className={styles.offerWrp}>
         <h3>Offers</h3>

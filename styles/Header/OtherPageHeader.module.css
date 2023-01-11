@@ -3,4 +3,5 @@
     position: sticky;
     top: 0px;
     position: -webkit-sticky;
+    z-index: 100;
 }
