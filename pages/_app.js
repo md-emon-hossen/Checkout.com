@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
   const [child, setchild] = useState(0);
   const [room, setroom] = useState(1);
   const [loading, setloading] = useState(false);
+  const [openBigPhoto, setopenBigPhoto] = useState(false);
 
 
   const passObject = {
@@ -37,7 +38,9 @@ function MyApp({ Component, pageProps }) {
     destination,
     setdestination,
     loading,
-    setloading
+    setloading,
+    openBigPhoto,
+    setopenBigPhoto
   }
 
 

@@ -1,19 +1,26 @@
 .ArrowWrp {
     display: flex;
     justify-content: space-between;
-    transform: translateY(-115px);
+    transform: translateY(-250px);
 }
 
 .arrowBtn {
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background: var(--btnBackground);
+    background: var(--parimaryBackground);
     color: #fff;
     border: none;
+    font-size: 22px;
+}
+
+@media (max-width:768px) {
+    .ArrowWrp {
+        transform: translateY(-190px);
+    }
 }

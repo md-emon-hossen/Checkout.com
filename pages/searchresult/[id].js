@@ -1,19 +1,14 @@
+import Image from "next/image";
 import Container from "../../Componnent/Container";
 import Footer from "../../Componnent/Footer";
 import OtherPageHeader from "../../Componnent/header/OtherPageHeader";
+import { UseAllContext } from "../../context/AllContext";
 import img from "../../public/default-img.jpg";
 import styles from "../../styles/search/SingleSearchResult.module.css";
 
-
 export default function SingleHotel() {
 
-    const style = {
-        background: `url(${img.src})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no - repeat",
-        backgroundPosition: "center"
-    }
-
+    const { setopenBigPhoto } = UseAllContext();
 
     return (
         <Container>
@@ -26,16 +21,28 @@ export default function SingleHotel() {
                         <p className={styles.spanTwo}>Book and Stay over $140 at this property and get a free airport taxi</p>
                     </div>
                     <div>
-                        <button className={styles.btn}>Reserve or Book Now</button>
+                        <button className={styles.btn}>Book Now</button>
                     </div>
                 </div>
                 <div className={styles.gallary}>
-                    <div style={style}></div>
-                    <div style={style}></div>
-                    <div style={style}></div>
-                    <div style={style}></div>
-                    <div style={style}></div>
-                    <div style={style}></div>
+                    <div onClick={() => { setopenBigPhoto(true) }}>
+                        <Image className={styles.image} src={img} alt="Image" />
+                    </div>
+                    <div onClick={() => { setopenBigPhoto(true) }}>
+                        <Image className={styles.image} src={img} alt="Image" />
+                    </div>
+                    <div onClick={() => { setopenBigPhoto(true) }}>
+                        <Image className={styles.image} src={img} alt="Image" />
+                    </div>
+                    <div onClick={() => { setopenBigPhoto(true) }}>
+                        <Image className={styles.image} src={img} alt="Image" />
+                    </div>
+                    <div onClick={() => { setopenBigPhoto(true) }}>
+                        <Image className={styles.image} src={img} alt="Image" />
+                    </div>
+                    <div onClick={() => { setopenBigPhoto(true) }}>
+                        <Image className={styles.image} src={img} alt="Image" />
+                    </div>
                 </div>
                 <div className={styles.discriptions}>
                     <div className={styles.header}>
@@ -55,7 +62,6 @@ export default function SingleHotel() {
         </Container>
     )
 }
-
 
 SingleHotel.getLayout = function getLayout(page) {
     return (

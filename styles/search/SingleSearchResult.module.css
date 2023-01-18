@@ -1,12 +1,8 @@
 .singleSearchWrp {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 3fr 1fr;
+    grid-template-rows: 150px 600px 1fr;
 }
-
-/* .singleSearchWrp>div {
-        border: 1px solid red;
-    } */
 
 .singleHeaderWrp {
     display: flex;
@@ -59,7 +55,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 15px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 .discriptions {
@@ -81,12 +83,6 @@
     margin: 20px;
 }
 
-/* .price>div>h3 {} */
-
-/* .price>div>p {} */
-
-/* .price>div>h2 {} */
-
 .price>div>button {
     width: 100%;
     padding: 10px;
@@ -98,4 +94,26 @@
     border: none;
     font-size: 15px;
     margin-top: 20px;
+}
+
+@media (max-width:768px) {
+    .discriptions {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-gap: 0px;
+    }
+
+    .discriptions>div {
+        margin: 5px 0px;
+    }
+
+    .gallary {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .singleSearchWrp {
+        grid-template-rows: 150px 690px 1fr;
+    }
+
 }
