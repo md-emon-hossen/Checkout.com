@@ -4,7 +4,7 @@ import Loading from "../Componnent/Loading";
 import { UseAllContext } from "../context/AllContext";
 import styles from "../styles/Login.module.css";
 
-export default function login() {
+export default function Login() {
 
     const [email, setemail] = useState("");
     const [pass, setpass] = useState("");
@@ -46,7 +46,7 @@ export default function login() {
 }
 
 
-login.getLayout = function getLayout(page) {
+Login.getLayout = function getLayout(page) {
     return (
         <>
             {page}

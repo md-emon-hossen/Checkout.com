@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-export default function notFound() {
+export default function NotFound() {
 
     const wrp = {
         background: "#003173",
@@ -24,7 +24,7 @@ export default function notFound() {
     )
 }
 
-notFound.getLayout = function getLayout(page) {
+NotFound.getLayout = function getLayout(page) {
     return (
         <>
             {page}

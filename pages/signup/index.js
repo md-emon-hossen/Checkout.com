@@ -5,7 +5,7 @@ import Loading from "../..//Componnent/Loading";
 import { UseAllContext } from "../../context/AllContext";
 import styles from "../../styles/Login.module.css";
 
-export default function signup() {
+export default function Signup() {
 
     const { loading, setloading } = UseAllContext();
     const router = useRouter();
@@ -73,7 +73,7 @@ export default function signup() {
 }
 
 
-signup.getLayout = function getLayout(page) {
+Signup.getLayout = function getLayout(page) {
     return (
         <>
             {page}

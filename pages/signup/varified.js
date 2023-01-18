@@ -4,7 +4,7 @@ import Loading from "../../Componnent/Loading";
 import { UseAllContext } from "../../context/AllContext";
 import styles from "../../styles/Login.module.css";
 
-export default function valified() {
+export default function Valified() {
 
     const { loading, setloading } = UseAllContext();
     const [otp, setotp] = useState('');
@@ -54,7 +54,7 @@ export default function valified() {
 }
 
 
-valified.getLayout = function getLayout(page) {
+Valified.getLayout = function getLayout(page) {
     return (
         <>
             {page}
