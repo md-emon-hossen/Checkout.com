@@ -35,6 +35,8 @@ export default function Bar() {
             alert("where are you going?");
         } else {
             setloading(false);
+            setopenOption(false);
+            setopenDate(false);
             router.push("/searchresult");
         }
     }

@@ -69,8 +69,31 @@
     }
 }
 
+
+@media (max-width:550px) {
+
+    .scribe>div>input {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width:425px) {
+
+    .scribeWrp {
+        padding-top: 10px;
+    }
+
+    .scribe>div>input {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
     .FotoorRowWrp {
+        margin-top: 60px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }

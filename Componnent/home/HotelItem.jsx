@@ -1,22 +1,11 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 import img from "../../public/default-img.jpg";
 import styles from "../../styles/home/HotelItem.module.css";
+
 export default function HotelItem() {
 
     const router = useRouter();
-
-    const style = {
-        background: `url(${img.src})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no - repeat",
-        backgroundPosition: "center"
-    }
-
-
-
-
-
-
 
     function handleClick(e) {
         e.preventDefault();
@@ -34,7 +23,9 @@ export default function HotelItem() {
 
     return (
         <div className={styles.hotelWrp}>
-            <div style={style}></div>
+            <div className={styles.image}>
+                <Image src={img} className={styles.image} />
+            </div>
             <div className={styles.discription}>
                 <h3>Grand Plance Hotel</h3>
                 <p>500m from center</p>

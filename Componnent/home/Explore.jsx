@@ -1,26 +1,66 @@
+import Image from "next/image";
 import img from "../../public/default-img.jpg";
 import styles from "../../styles/home/Explore.module.css";
 
 
 export default function Explore() {
-    const style = {
-
-        background: `linear-gradient(#00000075,#00000075),url('${img.src}')`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "Cover",
-        height: "100%",
-        padding: "10px 15px",
-        width: "50%",
-        marginRight: "20px",
-    }
-
     return (
-        <div className={style.exploreWrp} style={style}>
-            <div className={styles.titleWRp}>
-                {/* <h4>Dhaka</h4>
-                <p>255 Propertise</p> */}
+        <div className={styles.offerWrp}>
+            <div>
+                <Image src={img} className={styles.Image} />
+                <div className={styles.description}>
+                    <div>
+                        <h2>Hotels</h2>
+                        <p>1550 Hotels</p>
+                    </div>
+                </div>
             </div>
+            <div>
+                <Image src={img} className={styles.Image} />
+                <div className={styles.description}>
+                    <div>
+                        <h2>Apartments</h2>
+                        <p>1550 Apartments</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <Image src={img} className={styles.Image} />
+                <div className={styles.description}>
+                    <div>
+                        <h2>Resorts</h2>
+                        <p>1550 Resorts</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <Image src={img} className={styles.Image} />
+                <div className={styles.description}>
+                    <div>
+                        <h2>Cabins</h2>
+                        <p>1200 Cabins</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <Image src={img} className={styles.Image} />
+                <div className={styles.description}>
+                    <div>
+                        <h2>Valliege</h2>
+                        <p>1010 Valliege</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <Image src={img} className={styles.Image} />
+                <div className={styles.description}>
+                    <div>
+                        <h2>Guest House</h2>
+                        <p>1420 Guest House </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }
